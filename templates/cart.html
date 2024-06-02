@@ -1,0 +1,14 @@
+
+<h1>Shopping Cart</h1>
+
+<ul>
+{% for item in items %}
+<li>{{ item.name }} - ${{ item.price }}</li>
+{% endfor %}
+</ul>
+
+<form action="/checkout" method="GET">
+<input type="submit" value="Checkout">
+</form>
+
+
