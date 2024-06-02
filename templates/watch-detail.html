@@ -1,0 +1,12 @@
+
+<h1>{{ watch.name }}</h1>
+
+<p>{{ watch.description }}</p>
+
+<p>Price: ${{ watch.price }}</p>
+
+<form action="/cart/add/{{ watch.id }}" method="POST">
+<input type="submit" value="Add to Cart">
+</form>
+
+
