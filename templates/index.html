@@ -1,0 +1,15 @@
+
+<h1>Watches</h1>
+
+<form action="/watches/search" method="GET">
+<input type="text" name="term" placeholder="Search for a watch">
+<input type="submit" value="Search">
+</form>
+
+<ul>
+{% for watch in watches %}
+<li><a href="/watches/{{ watch.id }}">{{ watch.name }}</a></li>
+{% endfor %}
+</ul>
+
+
